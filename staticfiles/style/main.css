@@ -1,0 +1,249 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #003eaa;
+  color: #fff;
+}
+
+
+p {
+  color: #7e8bb6;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.header {
+  padding: 16px 64px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid #7e8bb6;
+  position: sticky;
+  top: 0px;
+  background-color: #00A0E3;
+}
+
+.header .navigation {
+  margin-left: auto;
+  margin-right: 24px;
+}
+
+.header .nav-list {
+  display: flex;
+  gap: 12px;
+}
+
+.header .nav-list a {
+  text-decoration: none;
+  color: #00255c;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.centered-button {
+  text-align: center;
+}
+
+.btn-client {
+  padding: 10px 20px;
+  background-color: #00A0E3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn {
+  border: none;
+  border-radius: 4px;
+  background-color: #162044;
+  color: #fff;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+.btn.btn-primary {
+  background-color: #0059f7;
+}
+
+/* Global style */
+
+.section-subtitle {
+  text-align: center;
+  font-size: 55px;
+  margin-bottom: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 48px;
+  /* font-weight: lighter; */
+  color: #fff;
+  font-weight: bold;
+}
+
+
+
+/* Pricing + mobile first */
+#pricing {
+  padding: 70px 64px;
+}
+#pricing .plans .plan {
+  padding: 12px 18px;
+  border-radius: 6px;
+  background-color: #162044;
+}
+
+#pricing .plans .plan:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+#pricing .plans .plan .title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #7e8bb6;
+  padding-bottom: 36px;
+  border-bottom: 1px solid #7e8bb6;
+  margin-bottom: 36px;
+}
+
+#pricing .plans .plan .title .price {
+  display: block;
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+}
+
+#pricing .plans .plan .title .price .currency-sign {
+  color: #7e8bb6;
+}
+
+#pricing .plans .plan .features {
+  color: #7e8bb6;
+  margin: 0 12px 36px 12px;
+}
+
+#pricing .plans .plan .features .feat:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+#histor {
+  padding-top: 45px;
+}
+
+#histor .hist .title {
+  padding: 40px 40px 20px 20px;
+  border-radius: 6px;
+  background-color: #162044;
+  margin: 0 250px 36px 250px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #9aa6ca;
+}
+
+#contacts {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 50vh; 
+}
+
+.contact {
+  padding: 20px;
+  background-color: #162044;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+  #hero .welcome {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+
+  #hero .welcome .title {
+    width: 100%;
+  }
+
+  #hero .welcome > div {
+    width: 60%;
+  }
+
+  /* How section */
+  #history .row {
+    gap: 18px;
+  }
+
+  #history .row:not(:last-child) {
+    margin-bottom: 36px;
+  }
+
+  #history .row .row-img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Header */
+  .header .navigation {
+    display: none;
+  }
+
+  .header .btn {
+    margin-left: auto;
+  }
+
+  /* Hero */
+  #hero .welcome > div {
+    width: 80%;
+  }
+
+  /* How section */
+  #how .row {
+    flex-direction: column;
+    text-align: center;
+  }
+  #how .row:nth-child(even) {
+    flex-direction: column;
+  }
+  #how .row .row-img {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  #pricing .plans {
+    max-width: 900px;
+    margin: 0 auto 48px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  #pricing .plans .plan:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #pricing .plans {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: end;
+  }
+
+  #pricing .plans .plan.promo {
+    margin-bottom: 36px;
+  }
+}

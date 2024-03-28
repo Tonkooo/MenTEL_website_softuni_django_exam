@@ -1,0 +1,103 @@
+{% extends 'base-web.html' %}
+{% load static %}
+{% block main_web_content %}
+
+    <main>
+      <section id="pricing">
+        <p class="section-subtitle">Check out</p>
+        <h2 class="section-title">Our newest mobile plans!</h2>
+
+        <div class="plans">
+
+          <article class="plan">
+            <h3 class="title">
+               Normal
+              <span class="price"><span class="currency-sign">$</span> 19</span>
+            </h3>
+            <ul class="features" role="list">
+              <li class="feat">
+                <i class="fas fa-check-circle"></i>
+                <span> 200 Free Calls </span>
+              </li>
+              <li class="feat">
+                <i class="fas fa-check-circle"></i> <span>200 Free SMS</span>
+              </li>
+              <li class="feat">
+                <i class="fas fa-check-circle"></i> <span>200 Free MMS</span>
+              </li>
+              <li class="feat">
+                <i class="fas fa-check-circle"></i> <span>200GB of Internet</span>
+              </li>
+              <li class="feat">
+                <i class="fas fa-check-circle"></i> <span>No Voice mail</span>
+              </li>
+              <li class="feat">
+                <i class="fas fa-check-circle"></i> <span>No Ringtones</span>
+              </li>
+            </ul>
+            <button class="btn btn-primary">Get this plan</button>
+          </article>
+
+          <article class="plan promo">
+            <h3 class="title">
+              High
+              <span class="price"><span class="currency-sign">$</span> 32</span>
+            </h3>
+            <ul class="features" role="list">
+              <li class="feat">
+                <i class="fas fa-check-circle"></i>
+                <span> 500 Calls </span>
+              </li>
+              <li class="feat">
+                <i class="fas fa-check-circle"></i> <span>500 Free SMS</span>
+              </li>
+              <li class="feat">
+                <i class="fas fa-check-circle"></i> <span>500 Free MMS</span>
+              </li>
+              <li class="feat">
+                <i class="fas fa-check-circle"></i> <span>500GB of Internet</span>
+              </li>
+              <li class="feat">
+                <i class="fas fa-check-circle"></i> <span>Limited Voice mail</span>
+              </li>
+              <li class="feat">
+                <i class="fas fa-check-circle"></i> <span>Limited Ringtones</span>
+              </li>
+            </ul>
+            <button class="btn btn-primary">Get this plan</button>
+          </article>
+
+          <article class="plan">
+            <h3 class="title">
+              Ultra
+              <span class="price"><span class="currency-sign">$</span> 54</span>
+            </h3>
+            <ul class="features" role="list">
+              <li class="feat">
+                <i class="fas fa-check-circle"></i>
+                <span> Unlimited Calls </span>
+              </li>
+              <li class="feat">
+                <i class="fas fa-check-circle"></i> <span>Unlimited SMS</span>
+              </li>
+              <li class="feat">
+                <i class="fas fa-check-circle"></i> <span>Unlimited MMS</span>
+              </li>
+              <li class="feat">
+                <i class="fas fa-check-circle"></i> <span>Unlimited Internet</span>
+              </li>
+              <li class="feat">
+                <i class="fas fa-check-circle"></i> <span>Voice mail</span>
+              </li>
+              <li class="feat">
+                <i class="fas fa-check-circle"></i> <span>Ringtones</span>
+              </li>
+            </ul>
+            <button class="btn btn-primary">Get this plan</button>
+          </article>
+
+        </div>
+      </section>
+    </main>
+    
+{% endblock %}
