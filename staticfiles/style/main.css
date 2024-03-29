@@ -60,7 +60,7 @@ p {
   font-size: 16px;
 }
 
-.btn {
+.btn-login {
   border: none;
   border-radius: 4px;
   background-color: #162044;
@@ -69,7 +69,7 @@ p {
   cursor: pointer;
 }
 
-.btn.btn-primary {
+.btn-login.btn-primary {
   background-color: #0059f7;
 }
 
@@ -201,7 +201,7 @@ p {
     display: none;
   }
 
-  .header .btn {
+  .header .btn-login {
     margin-left: auto;
   }
 

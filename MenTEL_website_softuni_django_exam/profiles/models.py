@@ -26,7 +26,7 @@ class Profile(models.Model):
         validators=[MinValueValidator(18)],
         null=False,
         blank=False,
-        help_text="Age requirement: 21 years and above."
+        help_text="Age requirement: 18 years and above."
     )
 
     password = models.CharField(

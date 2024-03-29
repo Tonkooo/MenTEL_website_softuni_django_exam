@@ -30,3 +30,4 @@ class ContactsView(views.TemplateView):
 
     def get_object(self, queryset=None):
         return get_profile()
+

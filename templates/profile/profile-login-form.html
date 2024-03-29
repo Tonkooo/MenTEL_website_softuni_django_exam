@@ -1,0 +1,18 @@
+{% extends 'base-web.html' %}
+{% load static %}
+{% block main_web_content %}
+
+      <section id="register-page" class="form_container">
+        <form id="register" action="{% url 'register view' %}" method="post">
+          <div class="container">
+            <div class="brand-logo"></div>
+            <h1>Register</h1>
+            {{ form }}
+              {% csrf_token %}
+
+            <input class="btn submit" type="submit" value="Register" />
+          </div>
+        </form>
+      </section>
+
+{% endblock %}
